@@ -10,9 +10,9 @@ stages:
       - mlflow[extras]==1.16.0
       - psycopg2-binary==2.8.6
     secrets:
-      MLFLOW_BACKEND_STORE_URI: mlflow-config
-      MLFLOW_DEFAULT_ARTIFACT_ROOT: mlflow-config
-      AWS_ACCESS_KEY_ID: aws-credentials
+      MLFLOW_BACKEND_STORE_URI: sqlite:///mlflow.db
+      MLFLOW_DEFAULT_ARTIFACT_ROOT: mlflow_artefacts
+      AWS_ACCESS_KEY_ID: 
       AWS_SECRET_ACCESS_KEY: aws-credentials
       AWS_DEFAULT_REGION: aws-credentials
     cpu_request: 0.1

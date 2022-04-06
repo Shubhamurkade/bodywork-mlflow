@@ -12,7 +12,7 @@ from mlflow.utils.process import ShellCommandException
 
 
 DEFAULT_HOST = "0.0.0.0"
-DEFAULT_PORT = 5000
+DEFAULT_PORT = 5001
 
 
 def configure_logger() -> logging.Logger:
