@@ -10,10 +10,10 @@ stages:
       - mlflow[extras]==1.16.0
       - psycopg2-binary==2.8.6
     secrets:
-      MLFLOW_BACKEND_STORE_URI: sqlite:///mlflow.db
-      MLFLOW_DEFAULT_ARTIFACT_ROOT: mlflow_artefacts
-      AWS_ACCESS_KEY_ID: ASIAU7JD6HVDEIPC2ETQ 
-      AWS_SECRET_ACCESS_KEY: L9Cgo+U5ALKFanLz+2L3Vp2H14MNqQ4ua2NMiqOH
+      MLFLOW_BACKEND_STORE_URI: "sqlite:///mlflow.db"
+      MLFLOW_DEFAULT_ARTIFACT_ROOT:" mlflow_artefacts"
+      AWS_ACCESS_KEY_ID: "ASIAU7JD6HVDEIPC2ETQ"
+      AWS_SECRET_ACCESS_KEY: "L9Cgo+U5ALKFanLz+2L3Vp2H14MNqQ4ua2NMiqOH"
       AWS_DEFAULT_REGION: us-east-1
     cpu_request: 0.1
     memory_request_mb: 250
